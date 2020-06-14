@@ -1,0 +1,34 @@
+{
+  "version": "0.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "pretest": "tsc",
+    "test": "env-cmd es4x test out/index.test.js",
+    "postinstall": "env-cmd es4x install",
+    "prestart": "tsc",
+    "start": "env-cmd es4x out/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "name": "es4x-react-ssr-typescript-demo",
+  "dependencies": {
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.5",
+    "@vertx/core": "3.9.1",
+    "@vertx/web": "3.9.1",
+    "env-cmd": "^10.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@vertx/unit": "3.9.1",
+    "es4x-pm": "0.12.0",
+    "typescript": "3.9.5"
+  },
+  "type": "module"
+}
